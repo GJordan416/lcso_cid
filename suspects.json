@@ -1,10 +1,16 @@
 [
   {
     "username": "TalonX",
-    "userid": 12345678,
+    "userid": "12345678",
     "role": "Leader",
     "organization": "The Black Talon Syndicate"
   },
+  {
+    "username": "masterwwjorden225alt",
+    "userid": "2211366950",
+    "role": "TEST, Not offical status",
+    "organization": "Lewis County Sheriff's Office"
+  }
   
   
 ]
