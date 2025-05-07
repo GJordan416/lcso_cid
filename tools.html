@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investigator Tools - Roblox CID</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    function buildProfileLink() {
+      const id = document.getElementById('useridInput').value.trim();
+      const output = document.getElementById('profileLink');
+      if (!id.match(/^\d+$/)) {
+        output.innerHTML = "<p>Please enter a valid numeric User ID.</p>";
+        return;
+      }
+      output.innerHTML = `
+        <p><a href="https://www.roblox.com/users/${id}/profile" target="_blank">View Roblox Profile</a></p>
+        <img src="https://www.roblox.com/headshot-thumbnail/image?userId=${id}&width=150&height=150&format=png" alt="Avatar thumbnail">
+      `;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Investigator Tools</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="tools.html" class="active">Tools</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Roblox Profile & Avatar Lookup</h2>
+      <p>Enter a Roblox User ID to view their profile and avatar:</p>
+      <input type="text" id="useridInput" placeholder="e.g. 12345678" />
+      <button onclick="buildProfileLink()">Lookup</button>
+      <div id="profileLink"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lewis County Sheriff's Office – CID | State of Columbia</p>
+  </footer>
+</body>
+</html>
