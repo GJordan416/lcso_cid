@@ -1,0 +1,13 @@
+title: Lewis County Sheriff's Office
+description: Criminal Investigation Division SOP
+theme: null
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
